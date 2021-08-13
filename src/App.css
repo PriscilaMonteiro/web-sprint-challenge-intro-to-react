@@ -1,8 +1,17 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0% 10%;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
+  background-color: rgb(49, 46, 46);
 }
 .Header {
-  color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin: 5%;
+  font-family: "Bungee Outline", cursive;
+  font-size: 8vw;
+  background-color: rgb(49, 46, 46);
+  color: yellow;
 }
 /* write your parent styles in here for your App.js */

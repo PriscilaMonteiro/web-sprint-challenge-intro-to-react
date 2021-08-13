@@ -7,7 +7,7 @@ const StyledHeader = styled.h1`
     text-shadow: 1px 1px 5px #fff;
     margin: 5%;
     font-family: 'Bungee Outline', cursive;
-    /* this is not working, need a fix */
+    /* this is not working, so I put a className at h1 */
     font-size: 8vw;
     background-color:  rgb(49, 46, 46);
     color: yellow;
@@ -35,7 +35,7 @@ const App = () => {
     <div>
       <StyledApp>
         <StyledHeader>
-          <h1>Star Wars</h1>
+          <h1 className="Header">Star Wars</h1>
         </StyledHeader>
         <Character />
       </StyledApp>

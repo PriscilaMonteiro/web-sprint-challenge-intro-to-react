@@ -12,6 +12,7 @@ const StyledDiv = styled.div`
     background-image: url(${bg});
     background-position: left center;
     font-family: 'Goldman', cursive;
+    /* this font-family isnt working. need to fix this */
     padding: 14px 14px;
     font-size: 1.5rem;
     
@@ -43,7 +44,7 @@ function Character () {
     useEffect(() => {
        getItems(page);
        setPage((page) => page +1);
-     
+// eslint-disable-next-line     
     },[]); 
     
     const lastItemRef = React.useCallback(
@@ -64,6 +65,7 @@ function Character () {
         
             if (node) observer.current.observe(node);
         },
+// eslint-disable-next-line        
         [isLoading, hasMore]
     );
 
