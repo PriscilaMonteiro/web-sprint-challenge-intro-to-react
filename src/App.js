@@ -7,6 +7,7 @@ const StyledHeader = styled.h1`
     text-shadow: 1px 1px 5px #fff;
     margin: 5%;
     font-family: 'Bungee Outline', cursive;
+    /* this is not working, need a fix */
     font-size: 8vw;
     background-color:  rgb(49, 46, 46);
     color: yellow;

@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import styled from "styled-components";
-import { Card, Grid, Loader } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 import loading from '../images/24S3.gif';
 import bg from '../images/sw-bg.jpg';
 
@@ -43,7 +43,8 @@ function Character () {
     useEffect(() => {
        getItems(page);
        setPage((page) => page +1);
-    },[]);
+     
+    },[]); 
     
     const lastItemRef = React.useCallback(
         (node) => {
