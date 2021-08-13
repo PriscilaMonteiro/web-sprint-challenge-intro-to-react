@@ -1,5 +1,26 @@
 import React from 'react';
 import './App.css';
+import Character from "./components/Character";
+import styled from "styled-components";
+
+const StyledHeader = styled.h1`
+    text-shadow: 1px 1px 5px #fff;
+    margin: 5%;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 8vw;
+    background-color:  rgb(49, 46, 46);
+    color: yellow;
+`; 
+
+const StyledApp = styled.div`
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  padding:0% 10%;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
+  background-color: rgb(49, 46, 46);
+`
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,8 +31,13 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">Star Wars</h1>
+    <div>
+      <StyledApp>
+        <StyledHeader>
+          <h1>Star Wars</h1>
+        </StyledHeader>
+        <Character />
+      </StyledApp>
     </div>
   );
 }

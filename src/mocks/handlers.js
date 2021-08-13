@@ -9,7 +9,7 @@ export const handlers = [
 
 export const data = [
   {
-    name: "Luke Skywalker",
+    name: "Test",
     height: "172",
     mass: "77",
     hair_color: "blond",
